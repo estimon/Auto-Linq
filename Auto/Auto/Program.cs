@@ -40,10 +40,32 @@ namespace Auto
             var a = Auto1.Where(x => x.Tootja.Contains("o")).ToList();
             foreach (var item in a)
             {
-                Console.WriteLine(item);
+                Console.WriteLine(item.Tootja);
             }
-            
-            
+            Console.WriteLine("-----------------------------");
+            Console.WriteLine("Autod mille nimes on \"E\" täht");
+            var b = Auto1.Where(x => x.Tootja.Contains("e")).ToList();
+            foreach (var item in a)
+            {
+                Console.WriteLine(item.Tootja);
+            }
+
+            Console.WriteLine("-----------------------------");
+            Console.WriteLine("Kõige nõrgem ja kõige tugevam auto");
+
+            var c = Auto1.Where(x => x.KW == 426).ToList();
+            foreach (var item in c)
+            {
+                Console.WriteLine(item.Tootja + " " + item.Mudel + " " + item.KW +"KW");
+            }
+            var d = Auto1.Where(x => x.KW == 55).ToList();
+            foreach (var item in d)
+            {
+                Console.WriteLine(item.Tootja + " " + item.Mudel + " " + item.KW + "KW");
+            }
+
+
+
             Console.Read();
         }
 

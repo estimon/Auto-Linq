@@ -4,3 +4,9 @@ c:\users\opilane\documents\visual studio 2017\Projects\Auto\Auto\bin\Debug\Auto.
 c:\users\opilane\documents\visual studio 2017\Projects\Auto\Auto\obj\Debug\Auto.csprojResolveAssemblyReference.cache
 c:\users\opilane\documents\visual studio 2017\Projects\Auto\Auto\obj\Debug\Auto.exe
 c:\users\opilane\documents\visual studio 2017\Projects\Auto\Auto\obj\Debug\Auto.pdb
+C:\Users\opilane\Documents\GitHub\T-NA\Auto\Auto\bin\Debug\Auto.exe.config
+C:\Users\opilane\Documents\GitHub\T-NA\Auto\Auto\bin\Debug\Auto.exe
+C:\Users\opilane\Documents\GitHub\T-NA\Auto\Auto\bin\Debug\Auto.pdb
+C:\Users\opilane\Documents\GitHub\T-NA\Auto\Auto\obj\Debug\Auto.csprojResolveAssemblyReference.cache
+C:\Users\opilane\Documents\GitHub\T-NA\Auto\Auto\obj\Debug\Auto.exe
+C:\Users\opilane\Documents\GitHub\T-NA\Auto\Auto\obj\Debug\Auto.pdb
