@@ -42,6 +42,7 @@ namespace Auto
             {
                 Console.WriteLine(item.Tootja);
             }
+<<<<<<< HEAD
             var b = Auto1.Where(x => x.Tootja.Contains("O")).ToList();
             foreach (var item in b)
             {
@@ -51,11 +52,18 @@ namespace Auto
             Console.WriteLine("3. Autod mille nimes on \"E\" täht");
             var c = Auto1.Where(x => x.Tootja.Contains("e")).ToList();
             foreach (var item in c)
+=======
+            Console.WriteLine("-----------------------------");
+            Console.WriteLine("Autod mille nimes on \"E\" täht");
+            var b = Auto1.Where(x => x.Tootja.Contains("e")).ToList();
+            foreach (var item in a)
+>>>>>>> 72a8d0ba27318322259e9504dbfe58372bad1ee5
             {
                 Console.WriteLine(item.Tootja);
             }
 
             Console.WriteLine("-----------------------------");
+<<<<<<< HEAD
             Console.WriteLine("4. Autod mille mudel koosneb rohkem kui neljast tähest");
             Console.WriteLine("-----------------------------");
 
@@ -78,6 +86,24 @@ namespace Auto
             Console.WriteLine("-----------------------------");
 
             Console.ReadLine();
+=======
+            Console.WriteLine("Kõige nõrgem ja kõige tugevam auto");
+
+            var c = Auto1.Where(x => x.KW == 426).ToList();
+            foreach (var item in c)
+            {
+                Console.WriteLine(item.Tootja + " " + item.Mudel + " " + item.KW +"KW");
+            }
+            var d = Auto1.Where(x => x.KW == 55).ToList();
+            foreach (var item in d)
+            {
+                Console.WriteLine(item.Tootja + " " + item.Mudel + " " + item.KW + "KW");
+            }
+
+
+
+            Console.Read();
+>>>>>>> 72a8d0ba27318322259e9504dbfe58372bad1ee5
         }
 
 
