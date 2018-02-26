@@ -24,7 +24,7 @@ namespace Auto
                 new Autoclass(){KW = 100, Tootja = "Opel", Mudel = "Vectra", Värv = "Helehall"},
             };
 
-            Console.WriteLine("Autod kilovattide järjestuses");
+            Console.WriteLine("1. Autod kilovattide järjestuses");
             Console.WriteLine("-----------------------------");
             var query = (from element in Auto1
                          orderby element.KW descending
@@ -35,16 +35,49 @@ namespace Auto
                 Console.WriteLine(item.Tootja + " " + item.Mudel + " " + item.Värv + " " + item.KW + " KW");
             }
             Console.WriteLine("-----------------------------");
-            Console.WriteLine("Autod mille nimes on \"O\" täht");
+            Console.WriteLine("2. Autod mille nimes on \"O\" täht");
 
             var a = Auto1.Where(x => x.Tootja.Contains("o")).ToList();
             foreach (var item in a)
             {
-                Console.WriteLine(item);
+                Console.WriteLine(item.Tootja);
             }
-            
-            
-            Console.Read();
+            var b = Auto1.Where(x => x.Tootja.Contains("O")).ToList();
+            foreach (var item in b)
+            {
+                Console.WriteLine(item.Tootja);
+            }
+            Console.WriteLine("-----------------------------");
+            Console.WriteLine("3. Autod mille nimes on \"E\" täht");
+            var c = Auto1.Where(x => x.Tootja.Contains("e")).ToList();
+            foreach (var item in c)
+            {
+                Console.WriteLine(item.Tootja);
+            }
+
+            Console.WriteLine("-----------------------------");
+            Console.WriteLine("4. Autod mille mudel koosneb rohkem kui neljast tähest");
+            Console.WriteLine("-----------------------------");
+
+            Console.WriteLine("5. Kõige võimsam ja kõige nõrgem auto");
+            Console.WriteLine();
+
+            var d = Auto1.Where(x => x.KW == 426).ToList();
+
+            foreach (var item in d)
+            {
+                Console.WriteLine("Kõige võimsam auto on " + item.Tootja + " " + item.Mudel + " " + item.KW + "KW");
+            }
+
+            var e = Auto1.Where(x => x.KW == 55).ToList();
+
+            foreach (var item in e)
+            {
+                Console.WriteLine("Kõige nõrgem auto on " + item.Tootja + " " + item.Mudel + " " + item.KW + "KW");
+            }
+            Console.WriteLine("-----------------------------");
+
+            Console.ReadLine();
         }
 
 
